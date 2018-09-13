@@ -38,7 +38,7 @@ function displayRepositories(result) {
   function displayCommits(result) {
   	const commitList = "<ul>" + result.map(commit => {
   		return (`
-  			<li> 
+  			<li>
   			<h3>SHA: ${commit.sha}</h3>
   			<h2>Author: ${commit.commit.author.name}</h2>
   			<p>Author Login: ${commit.author === null ? 'no info' : commit.author.login }</p>
